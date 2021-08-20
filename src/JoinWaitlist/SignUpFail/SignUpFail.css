@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap");
+
+.signUpFail__container {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUpFail__header {
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(51, 51, 51);
+  text-align: center;
+}
+
+.signUpFail__btn {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .signUpFail__container {
+    height: 60%;
+  }
+}

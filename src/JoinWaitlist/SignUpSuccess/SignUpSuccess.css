@@ -1,0 +1,21 @@
+.signUpSuccess__container {
+  padding: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(51, 51, 51);
+  text-align: center;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUpSuccess__subHeader {
+  color: #70737c;
+}
+
+@media only screen and (max-width: 1100px) {
+  .signUpSuccess__container {
+    height: 60%;
+  }
+}
