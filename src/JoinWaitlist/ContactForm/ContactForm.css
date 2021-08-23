@@ -37,6 +37,12 @@
   font-weight: 600;
   color: #333333;
   border-radius: 10px;
+  border: 1px solid grey;
+    box-shadow: 3px 6px 5px 3px rgba(0, 0,0, 0.3);
+}
+.joinWaitlist__input::placeholder{
+  font-weight: lighter;
+  color: rgb(155, 150, 150);
 }
 
 .joinWaitlist__submitBtn {
@@ -184,6 +190,7 @@
     padding: 15px 20px;
     border: none;
     border: 1px solid rgb(97, 96, 96);
+
   }
 
   .joinWaitlist__submitBtn {
