@@ -48,12 +48,9 @@ function ContactForm({ setComponent }) {
       const data = { name, email, mobile };
       const parsedData = JSON.stringify(data);
       axios
-        .post(
-          `https://radiant-brushlands-76905.herokuapp.com/join-waitlist?name=${name}&email=${email}&mobile=${mobile}`,
-          {
-            body: parsedData,
-          }
-        )
+        .post(`/join-waitlist?name=${name}&email=${email}&mobile=${mobile}`, {
+          body: parsedData,
+        })
         .then((response) => {
           if (response.status === 200) setComponent("success");
           else setComponent("fail");

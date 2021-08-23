@@ -2,7 +2,7 @@
   "name": "sayf",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://sanctum006.github.io/react-gh-pages",
+  "proxy": "https://radiant-brushlands-76905.herokuapp.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -10,6 +10,7 @@
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
+    "firebase": "^8.10.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-mailchimp-subscribe": "^2.1.3",
@@ -22,9 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "http-proxy-middleware": "^2.0.1"
   }
 }
