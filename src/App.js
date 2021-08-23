@@ -1,22 +1,24 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import JoinWaitlist from "./JoinWaitlist/JoinWaitlist";
-import Dummy from "./Dummy/Dummy";
+import Navbar from "./Navbar/Navbar";
+import Middle from "./Middle/Middle";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
     <div className="app">
       <Router>
-        <div>
-          <Switch>
-            <Route exact path="/">
-              <Dummy />
-            </Route>
-            <Route path="/join-waitlist">
-              <JoinWaitlist />
-            </Route>
-          </Switch>
-        </div>
+        <Switch>
+          <Route exact path="/">
+            <Navbar />
+            <Middle />
+            <Footer />
+          </Route>
+          <Route path="/join-waitlist">
+            <JoinWaitlist />
+          </Route>
+        </Switch>
       </Router>
     </div>
   );

@@ -4,3 +4,7 @@
   outline: none;
   border: none;
 }
+
+body {
+  box-sizing: border-box;
+}

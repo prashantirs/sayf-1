@@ -1,0 +1,9 @@
+.footer__socialLinks {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__socialLinks > * {
+  margin: 0px 10px;
+}

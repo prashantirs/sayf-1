@@ -1,0 +1,19 @@
+.navbar__container {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.navbar__getEarlyAccessButton {
+  color: #4446bf;
+  border-color: #4446bf;
+}
+
+.navbar__getEarlyAccessButton:hover {
+  color: #fff;
+  background-color: #4446bf;
+  border-color: #4446bf;
+}
+
+.navbar__logo {
+  width: 70px;
+  margin: 0 10px;
+}

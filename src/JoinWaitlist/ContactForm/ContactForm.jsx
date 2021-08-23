@@ -1,8 +1,6 @@
 import axios from "axios";
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import useFormValidator from "use-form-input-validator";
-import leftArrow from "./../../assets/left-arrow.svg";
 import "./ContactForm.css";
 
 function ContactForm({ setComponent }) {
@@ -24,6 +22,24 @@ function ContactForm({ setComponent }) {
     },
   });
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const { name, email, mobile } = values;
+
+  //   const res = await fetch(`http://localhost:8000/join-waitlist`, {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({ name, email, mobile }),
+  //   });
+
+  //   const data = await res.json();
+
+  //   if (data.staus === 200) setComponent("success");
+  //   else setComponent("fail");
+  // };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isAllFieldsValid()) {
@@ -33,29 +49,20 @@ function ContactForm({ setComponent }) {
       const parsedData = JSON.stringify(data);
       axios
         .post(
-          `http://localhost:8000/testing?name=${name}&email=${"email"}&mobile=${mobile}`,
+          `https://radiant-brushlands-76905.herokuapp.com/join-waitlist?name=${name}&email=${email}&mobile=${mobile}`,
           {
-            name: name,
-            email: email,
-            mobile: mobile,
+            body: parsedData,
           }
         )
         .then((response) => {
           if (response.status === 200) setComponent("success");
           else setComponent("fail");
-          // console.log(response.status);
         });
-      const article = { name: "ASD", email: "asd" };
     }
   };
   return (
     <>
       <div className="joinWaitlist__textContent">
-        <Link to="/">
-          <button className="joinWaitlist__leftArrow">
-            <img src={leftArrow} alt="" />
-          </button>
-        </Link>
         <h1 className="joinWaitlist__textContentHeader">
           Join in under 2 minutes
         </h1>
@@ -67,7 +74,7 @@ function ContactForm({ setComponent }) {
       </div>
       <form
         // action="http://localhost:8000/testing"
-        // method="POST"
+        method="POST"
         className="joinWaitlist__form"
       >
         <input
