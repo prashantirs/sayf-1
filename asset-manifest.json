@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/sayf/static/css/main.659302f1.chunk.css",
+    "main.js": "/sayf/static/js/main.ed4b8a38.chunk.js",
+    "main.js.map": "/sayf/static/js/main.ed4b8a38.chunk.js.map",
+    "runtime-main.js": "/sayf/static/js/runtime-main.1f6ab6f9.js",
+    "runtime-main.js.map": "/sayf/static/js/runtime-main.1f6ab6f9.js.map",
+    "static/js/2.72555a4b.chunk.js": "/sayf/static/js/2.72555a4b.chunk.js",
+    "static/js/2.72555a4b.chunk.js.map": "/sayf/static/js/2.72555a4b.chunk.js.map",
+    "index.html": "/sayf/index.html",
+    "static/css/main.659302f1.chunk.css.map": "/sayf/static/css/main.659302f1.chunk.css.map",
+    "static/js/2.72555a4b.chunk.js.LICENSE.txt": "/sayf/static/js/2.72555a4b.chunk.js.LICENSE.txt",
+    "static/media/left-arrow.9904210f.svg": "/sayf/static/media/left-arrow.9904210f.svg",
+    "static/media/logo.6189b68c.png": "/sayf/static/media/logo.6189b68c.png",
+    "static/media/nav-logo.304093b9.png": "/sayf/static/media/nav-logo.304093b9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f6ab6f9.js",
+    "static/js/2.72555a4b.chunk.js",
+    "static/css/main.659302f1.chunk.css",
+    "static/js/main.ed4b8a38.chunk.js"
+  ]
+}
